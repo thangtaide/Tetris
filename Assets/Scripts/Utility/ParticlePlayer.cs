@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class ParticlePlayer : MonoBehaviour
 {
+
     public ParticleSystem[] allParticle;
     void Start()
     {

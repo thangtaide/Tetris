@@ -6,7 +6,6 @@ public class SoundManager : MonoBehaviour
 {
     public bool musicEnabled = true;
     public bool fxEnabled = true;
-
     [Range(0,1f)]
     public float musicVolume= 1f;
     [Range(0, 1f)]
@@ -22,6 +21,7 @@ public class SoundManager : MonoBehaviour
 
     public AudioClip[] vocalClip;
     public AudioClip vocalGameOver;
+
 
     public AudioClip vocalLevelUp;
 

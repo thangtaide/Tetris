@@ -10,7 +10,6 @@ public class ScreenFader : MonoBehaviour
     public float targetAlpha = 0f;
     public float delay = 0f;
     public float timeToFate = 1f;
-
     float inc;
     float currentAlpha;
     MaskableGraphic graphic;

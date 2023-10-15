@@ -49,6 +49,7 @@ public class Spawner : MonoBehaviour
             }
         }
     }
+
     Shape GetQueueShape()
     {
         Shape firstShape = shapeQueue[0];

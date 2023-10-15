@@ -9,7 +9,6 @@ public class Board : MonoBehaviour
     public int width =10;
     public int header = 8;
     public ParticlePlayer[] particlePlayer;
-
     public int completeRow=0;
     Transform[,] grid;
     private void Awake()
@@ -32,7 +31,7 @@ public class Board : MonoBehaviour
                 {
                     Transform clone = Instantiate(emptySquare, new Vector3(emptySquare.position.x +  j, emptySquare.position.y +  i), Quaternion.identity);
                     
-                    clone.parent = transform;
+                    //clone.parent = transform;
                 }
             }
         }

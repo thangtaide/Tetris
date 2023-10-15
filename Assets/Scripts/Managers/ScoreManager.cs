@@ -42,6 +42,7 @@ public class ScoreManager : MonoBehaviour
         }
         UpdateUIText();
     }
+
     private void UpdateUIText()
     {
         if (scoreText)
@@ -57,6 +58,7 @@ public class ScoreManager : MonoBehaviour
             levelText.text = level.ToString();
         }
     }
+
     private void Start()
     {
         Reset();

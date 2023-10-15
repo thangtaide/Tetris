@@ -32,6 +32,7 @@ public class GameController : MonoBehaviour
     public IconToggle togglePause;
     public bool isPause = false;
     public GameObject pausePanel;
+
     private void Start()
     {
         spawner = GameObject.FindWithTag("Spawner").GetComponent<Spawner>();
@@ -109,7 +110,7 @@ public class GameController : MonoBehaviour
             activeShape.RotateClockwise(rotateClockwise);
             if (!board.IsValidPosition(activeShape))
             {
-                activeShape.RotateClockwise(rotateClockwise);
+                activeShape.RotateClockwise(!rotateClockwise);
                 PlaySound(soundManager.errSound);
             }
             else
@@ -145,7 +146,7 @@ public class GameController : MonoBehaviour
                             if (scoreManager.didLevelUp)
                             {
                                 PlaySound(soundManager.vocalLevelUp);
-                                timeToDropModded = Mathf.Clamp(timeToDrop - ((float)scoreManager.level - 1) * 0.1f, 0.05f, 1f);
+                                timeToDropModded = Mathf.Clamp(timeToDrop - ((float)scoreManager.level - 1) * 0.15f, 0.05f, 1f);
                             }
                             else
                             {

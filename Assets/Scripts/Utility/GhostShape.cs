@@ -7,6 +7,7 @@ public class GhostShape : MonoBehaviour
     public Color ghostColor = new Color(1f, 1f, 1f, 0.2f);
     bool hitBoard = false;
     Shape ghostShape;
+
     public void CreateGhostShape(Shape shapeObj, Board board)
     {
         if (!ghostShape)

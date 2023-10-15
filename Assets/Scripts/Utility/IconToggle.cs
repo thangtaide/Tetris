@@ -8,7 +8,6 @@ public class IconToggle : MonoBehaviour
 {
     public Sprite iconEnable;
     public Sprite iconDisable;
-
     public bool defaultIconEnable = true;
 
     Image image;
